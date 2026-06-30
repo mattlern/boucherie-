@@ -165,7 +165,7 @@ footer .brand img[src*="logo-officiel"]{width:300px;max-height:64px;}
 
 /* Page histoire */
 .page-hero--story{background:linear-gradient(rgba(48,48,51,.88),rgba(48,48,51,.88)),url('assets/images/nouvelle-selection/boutique-collonges.png') center/cover;color:white}
-.story-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,300px);gap:clamp(2rem,6vw,5rem);align-items:center}
+.story-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,420px);gap:clamp(2rem,6vw,5rem);align-items:center}
 .story-hero-logo{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);padding:26px;backdrop-filter:blur(8px)}
 .story-hero-logo img{width:100%;height:auto;filter:drop-shadow(0 18px 35px rgba(0,0,0,.35))}
 .story-grid{display:grid;grid-template-columns:1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:center}
@@ -200,7 +200,7 @@ footer .brand img[src*="logo-officiel"]{width:300px;max-height:64px;}
 .bbq-card p{margin:0;color:var(--muted);font-size:.92rem}
 .bbq-callout{margin-top:28px;background:white;border-left:4px solid var(--red);border-radius:0 12px 12px 0;padding:18px 20px;color:var(--charcoal);box-shadow:var(--shadow)}
 .bbq-callout a{color:var(--red);font-weight:700}
-@media(max-width:900px){.story-hero-grid,.story-grid,.story-grid--reverse,.cards-2,.bbq-feature{grid-template-columns:1fr}.story-hero-logo{max-width:260px}.story-image img{height:360px}.bbq-grid{grid-template-columns:1fr 1fr}.bbq-feature__image img{height:330px}}
+@media(max-width:900px){.story-hero-grid,.story-grid,.story-grid--reverse,.cards-2,.bbq-feature{grid-template-columns:1fr}.story-hero-logo{max-width:420px}.story-image img{height:360px}.bbq-grid{grid-template-columns:1fr 1fr}.bbq-feature__image img{height:330px}}
 @media(max-width:560px){.bbq-grid{grid-template-columns:1fr}.cards-2{grid-template-columns:1fr}.story-card img{height:230px}.bbq-feature__image img{height:220px}.story-hero-logo{max-width:220px}}
 
 /* Page contact — grandes cartes boutiques */
