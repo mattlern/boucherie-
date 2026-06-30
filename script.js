@@ -1,3 +1,12 @@
+const bbqImg=document.querySelector('#bbq-hero-img');
+document.querySelectorAll('.bbq-tag').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.bbq-tag').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    if(bbqImg){bbqImg.src=btn.dataset.img;}
+  });
+});
+
 const menuButton=document.querySelector('.menu-toggle');
 const navLinks=document.querySelector('.nav-links');
 menuButton?.addEventListener('click',()=>navLinks.classList.toggle('open'));

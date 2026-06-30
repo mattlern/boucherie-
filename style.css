@@ -191,7 +191,7 @@ footer .brand img[src*="logo-officiel"]{width:300px;max-height:64px;}
 .bbq-feature__content h2{font-family:'Libre Caslon Text',serif;font-size:clamp(2.4rem,5vw,4.6rem);line-height:1;margin:.35rem 0 1rem}
 .bbq-feature__content p{font-size:1.08rem;color:rgba(255,255,255,.86);max-width:620px}
 .bbq-tags{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
-.bbq-tags span,.bbq-tags a{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:700;font-size:.86rem;color:white;text-decoration:none;transition:.2s}.bbq-tags a:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.6)}
+.bbq-tags span,.bbq-tag{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:700;font-size:.86rem;color:white;cursor:pointer;transition:.2s}.bbq-tag:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.6)}.bbq-tag.active{background:white;color:var(--charcoal);border-color:white}
 .bbq-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
 .bbq-card{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
 .bbq-card img{width:100%;height:170px;object-fit:cover}
