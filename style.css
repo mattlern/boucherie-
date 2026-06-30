@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap');
+
+:root{--red:#c92e2b;--red-dark:#a92120;--charcoal:#303033;--cream:#f7f1e7;--paper:#fffdf8;--muted:#6d6a68;--line:#ded5c8;--shadow:0 18px 50px rgba(34,29,25,.12);--radius:18px;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--charcoal);font-family:'DM Sans',sans-serif;background:var(--paper);line-height:1.6}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700}.section{padding:88px 0}.section--cream{background-color:var(--cream);background-image:linear-gradient(rgba(247,241,231,.93),rgba(247,241,231,.93)),url('assets/images/motif-boucherie.png');background-size:auto,540px}.section-title{font-family:'Libre Caslon Text',serif;font-size:clamp(2rem,4vw,3.5rem);line-height:1.15;margin:.3rem 0 1rem}.section-intro{max-width:700px;color:var(--muted);font-size:1.05rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:14px 22px;border-radius:4px;font-weight:700;border:1px solid transparent;transition:.25s}.btn--red{background:var(--red);color:white}.btn--red:hover{background:var(--red-dark);transform:translateY(-2px)}.btn--outline{border-color:currentColor;color:var(--charcoal);background:rgba(255,255,255,.05)}.btn--outline:hover{background:white;color:var(--charcoal)}
+
+.site-header{position:sticky;top:0;z-index:50;background:rgba(48,48,51,.97);color:white;box-shadow:0 6px 20px rgba(0,0,0,.12)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;font-weight:700}.brand img{width:60px;height:60px;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,.35)}.brand span{line-height:1.2}.brand small{display:block;font-weight:400;color:#d8d8d8;font-size:.72rem;letter-spacing:.08em}.nav-links{display:flex;align-items:center;gap:28px}.nav-links a{font-size:.95rem}.nav-links a.active,.nav-links a:hover{color:#ff6b65}.menu-toggle{display:none;border:0;background:transparent;color:white;font-size:1.65rem}
+
+.hero{min-height:690px;display:grid;align-items:center;color:white;background:linear-gradient(90deg,rgba(25,24,25,.92) 0%,rgba(25,24,25,.67) 42%,rgba(25,24,25,.18) 72%),url('assets/images/nouvelle-selection/hero-boucherie.png') center/cover}.hero-content{max-width:680px;padding:80px 0}.hero h1{font-family:'Libre Caslon Text',serif;font-size:clamp(3rem,7vw,5.4rem);line-height:1.04;margin:.5rem 0 1.4rem}.hero p{font-size:1.15rem;max-width:590px;color:#f1ece7}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}.hero .btn--outline{color:white}
+
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.service-card{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.25s}.service-card:hover{transform:translateY(-6px)}.service-card img{height:260px;width:100%;object-fit:cover}.service-card-body{padding:28px}.service-card h3,.shop-card h3{font-family:'Libre Caslon Text',serif;font-size:1.7rem;margin:0 0 .6rem}.red-rule{width:42px;height:3px;background:var(--red);margin:12px 0 16px}
+
+.commitments{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:45px;border:1px solid var(--line);background:rgba(255,255,255,.7)}.commitment{padding:34px;text-align:center;border-right:1px solid var(--line)}.commitment:last-child{border:0}.commitment-icon{width:52px;height:52px;border:1px solid var(--red);color:var(--red);border-radius:50%;display:grid;place-items:center;margin:0 auto 14px;font-size:1.3rem}.commitment h3{font-family:'Libre Caslon Text',serif;font-size:1.15rem}.commitment p{font-size:.9rem;color:var(--muted)}
+
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:35px}.gallery figure{margin:0}.gallery img{aspect-ratio:1/1;object-fit:cover;border-radius:12px}.gallery figcaption{text-align:center;margin-top:9px;font-family:'Libre Caslon Text',serif}
+
+.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:42px}.shop-card{background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.shop-card img{width:100%;height:300px;object-fit:cover}.shop-card-body{padding:30px}.shop-card h3{color:var(--red)}.contact-line{display:flex;gap:12px;margin:12px 0;color:var(--muted)}.contact-line strong{color:var(--charcoal)}
+
+.page-hero{padding:110px 0 75px;background:var(--charcoal);color:white}.page-hero h1{font-family:'Libre Caslon Text',serif;font-size:clamp(2.8rem,6vw,5rem);margin:.3rem 0}.page-hero p{max-width:680px;color:#ddd}
+
+.animal-nav{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 45px}.animal-nav button{border:1px solid var(--line);background:white;padding:12px 18px;cursor:pointer;font-weight:700}.animal-nav button.active{background:var(--red);color:white;border-color:var(--red)}.animal-panel{display:none;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.animal-panel.active{display:grid}.animal-panel img{border-radius:var(--radius);box-shadow:var(--shadow);background:var(--cream)}.animal-copy h2{font-family:'Libre Caslon Text',serif;font-size:2.4rem}.animal-copy ul{padding-left:20px;color:var(--muted)}.notice{margin-top:25px;padding:18px;border-left:4px solid var(--red);background:var(--cream);font-size:.92rem}
+
+.product-band{display:grid;grid-template-columns:1fr 1fr;min-height:420px}.product-band:nth-child(even) .product-image{order:2}.product-image img{width:100%;height:100%;object-fit:cover}.product-copy{display:flex;align-items:center;padding:60px;max-width:680px}.product-copy h2{font-family:'Libre Caslon Text',serif;font-size:2.8rem;margin:.3rem 0 1rem}.product-copy p{color:var(--muted)}
+
+.contact-layout{display:grid;grid-template-columns:1fr .8fr;gap:50px}.contact-form{background:white;padding:34px;border-radius:var(--radius);box-shadow:var(--shadow)}.field{display:grid;gap:7px;margin-bottom:18px}.field input,.field textarea,.field select{font:inherit;padding:13px;border:1px solid var(--line);background:#fff}.field textarea{min-height:145px;resize:vertical}.contact-stores{display:grid;gap:20px}.mini-shop{padding:26px;background:var(--cream);border-left:4px solid var(--red)}
+
+footer{background:var(--charcoal);color:white;padding:58px 0 18px}.footer-grid{display:grid;grid-template-columns:1.1fr .7fr 1.5fr;gap:40px}.footer-grid h3{font-family:'Libre Caslon Text',serif}.footer-links{display:grid;gap:8px;color:#ddd}.footer-bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:38px;padding-top:18px;color:#bbb;font-size:.85rem;text-align:center}
+
+.reveal{opacity:0;transform:translateY(20px);transition:.65s}.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:900px){.nav-links{position:fixed;inset:82px 0 auto 0;background:var(--charcoal);padding:24px;display:none;flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-toggle{display:block}.nav .btn{display:none}.cards-3,.shop-grid,.animal-panel,.contact-layout,.product-band{grid-template-columns:1fr}.commitments{grid-template-columns:1fr 1fr}.commitment:nth-child(2){border-right:0}.commitment:nth-child(-n+2){border-bottom:1px solid var(--line)}.gallery{grid-template-columns:repeat(2,1fr)}.product-band:nth-child(even) .product-image{order:0}.product-image{height:360px}.footer-grid{grid-template-columns:1fr}.hero{min-height:600px;background-position:65% center}.brand span{display:none}}
+@media(max-width:560px){.container{width:min(100% - 26px,var(--max))}.section{padding:64px 0}.hero h1{font-size:2.8rem}.commitments{grid-template-columns:1fr}.commitment{border-right:0;border-bottom:1px solid var(--line)!important}.gallery{grid-template-columns:1fr 1fr}.shop-card img{height:230px}.product-copy{padding:38px 22px}.page-hero{padding:80px 0 55px}}
+
+/* Horaires des boutiques */
+.opening-hours{margin:1.15rem 0 1.35rem;padding:1rem 1.05rem;background:rgba(245,239,229,.7);border-left:3px solid var(--red);border-radius:0 10px 10px 0}
+.opening-hours h4{margin:0 0 .7rem;font-family:var(--font-heading);font-size:1.05rem;color:var(--dark)}
+.opening-hours dl{margin:0;display:grid;gap:.38rem}
+.opening-hours dl>div{display:grid;grid-template-columns:minmax(82px,1fr) minmax(118px,1.35fr);gap:.7rem;align-items:start}
+.opening-hours dt{font-weight:700;color:var(--dark)}
+.opening-hours dd{margin:0;color:var(--muted);line-height:1.35}
+.mini-shop .opening-hours{background:#fff;border:1px solid rgba(47,47,49,.1);border-left:3px solid var(--red)}
+@media (max-width:560px){.opening-hours dl>div{grid-template-columns:80px 1fr}.opening-hours{padding:.9rem}}
+
+/* Découpes interactives */
+.interactive-animal{grid-template-columns:minmax(0,1.35fr) minmax(270px,.65fr);align-items:stretch}
+.cut-viewer{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--cream);box-shadow:var(--shadow);min-width:0}
+.cut-viewer canvas{display:block;width:100%;height:auto;cursor:crosshair;touch-action:manipulation}
+.cut-hint{position:absolute;left:16px;bottom:14px;margin:0;padding:8px 12px;border-radius:999px;background:rgba(48,48,51,.86);color:white;font-size:.78rem;pointer-events:none;transition:.25s}
+.cut-viewer.is-active .cut-hint{opacity:0;transform:translateY(5px)}
+.cut-info{background:white;border-radius:var(--radius);box-shadow:var(--shadow);padding:30px;display:flex;flex-direction:column;justify-content:center;border-top:4px solid var(--red);transition:.25s}
+.cut-info h2{font-family:'Libre Caslon Text',serif;font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.15;margin:.35rem 0 .9rem}
+.cut-info-text{margin:0;color:var(--muted)}
+.cut-info.is-selected{transform:translateX(0);border-top-color:var(--red-dark)}
+.cut-buttons{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.cut-buttons button{border:1px solid var(--line);background:var(--cream);color:var(--charcoal);padding:7px 10px;border-radius:999px;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;transition:.2s}
+.cut-buttons button:hover,.cut-buttons button.active,.cut-buttons button:focus-visible{background:var(--red);border-color:var(--red);color:white;outline:none}
+@media(max-width:900px){.interactive-animal{grid-template-columns:1fr}.cut-info{padding:24px}.cut-buttons{margin-top:14px}}
+
+/* Horaires plus compacts */
+.opening-hours{margin:.75rem 0 .9rem;padding:.72rem .82rem}
+.opening-hours h4{margin:0 0 .42rem;font-size:.98rem}
+.opening-hours dl{gap:.18rem}
+.opening-hours dl>div{grid-template-columns:76px 1fr;gap:.5rem}
+.opening-hours dt,.opening-hours dd{font-size:.84rem;line-height:1.2}
+
+/* Horaires visibles et compacts */
+.opening-hours{display:block!important;margin:.7rem 0 .9rem!important;padding:.7rem .8rem!important}
+.opening-hours h4{display:block!important;margin:0 0 .45rem!important;font-size:.94rem!important}
+.opening-hours dl{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:.24rem .7rem!important;margin:0!important}
+.opening-hours dl>div{display:grid!important;grid-template-columns:64px 1fr!important;gap:.38rem!important;align-items:start!important}
+.opening-hours dt,.opening-hours dd{display:block!important;font-size:.76rem!important;line-height:1.18!important}
+@media(max-width:650px){.opening-hours dl{grid-template-columns:1fr!important}.opening-hours dl>div{grid-template-columns:72px 1fr!important}}
+
+/* Logo officiel horizontal Maison Rouffiange */
+.brand img[src*="logo-officiel"]{
+  width:260px;
+  height:auto;
+  max-height:56px;
+  border-radius:0;
+  object-fit:contain;
+  border:0;
+  background:transparent;
+}
+.brand img[src*="logo-officiel"] + span{display:none;}
+footer .brand img[src*="logo-officiel"]{width:300px;max-height:64px;}
+@media(max-width:560px){.brand img[src*="logo-officiel"]{width:210px;max-height:50px}.nav{gap:12px}}
+
+
+/* Hero avec logo client */
+.hero-content--with-logo {
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: minmax(300px, 420px) 1px minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  text-align: left;
+}
+
+.hero-logo-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo-panel img {
+  width: clamp(260px, 32vw, 400px);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 28px 55px rgba(0, 0, 0, 0.45));
+}
+
+.hero-divider {
+  width: 1px;
+  height: clamp(160px, 22vw, 260px);
+  background: rgba(255,255,255,0.22);
+  flex-shrink: 0;
+}
+
+.hero-text-panel {
+  max-width: 680px;
+}
+
+.hero-content--with-logo h1 {
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  max-width: 640px;
+}
+
+.hero-content--with-logo p {
+  max-width: 580px;
+}
+
+@media (max-width: 1000px) {
+  .hero-content--with-logo {
+    grid-template-columns: minmax(220px, 300px) 1px minmax(0, 1fr);
+    gap: clamp(1.5rem, 3vw, 3rem);
+  }
+  .hero-logo-panel img {
+    width: clamp(200px, 26vw, 300px);
+  }
+  .hero-divider {
+    height: clamp(120px, 18vw, 200px);
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-content--with-logo {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    justify-items: center;
+  }
+  .hero-divider { display: none; }
+  .hero-logo-panel img {
+    width: clamp(160px, 45vw, 240px);
+  }
+  .hero-text-panel,
+  .hero-content--with-logo h1,
+  .hero-content--with-logo p {
+    max-width: 100%;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+}
+
+
+/* Page histoire */
+.page-hero--story{background:linear-gradient(rgba(48,48,51,.88),rgba(48,48,51,.88)),url('assets/images/nouvelle-selection/boutique-collonges.png') center/cover;color:white}
+.story-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,300px);gap:clamp(2rem,6vw,5rem);align-items:center}
+.story-hero-logo{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);padding:26px;backdrop-filter:blur(8px)}
+.story-hero-logo img{width:100%;height:auto;filter:drop-shadow(0 18px 35px rgba(0,0,0,.35))}
+.story-grid{display:grid;grid-template-columns:1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.story-grid--reverse{grid-template-columns:.9fr 1fr}
+.story-text p{color:var(--muted);font-size:1.03rem}
+.story-image img{width:100%;height:380px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.cards-2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:38px}
+.story-card{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.story-card img{width:100%;height:280px;object-fit:cover}
+.story-card div{padding:28px}
+.story-card h3{font-family:'Libre Caslon Text',serif;font-size:1.65rem;margin:0 0 .6rem;color:var(--red)}
+.story-card p{color:var(--muted);margin:0}
+.team-values{display:grid;gap:14px;margin-top:26px}
+.team-values div{background:white;border-left:4px solid var(--red);padding:16px 18px;border-radius:0 12px 12px 0;box-shadow:0 10px 30px rgba(34,29,25,.08)}
+.team-values strong{display:block;font-family:'Libre Caslon Text',serif;font-size:1.12rem}
+.team-values span{display:block;color:var(--muted);font-size:.94rem;margin-top:3px}
+
+/* Mise en avant Brochettes & BBQ */
+.seasonal-bbq{position:relative;overflow:hidden;background:linear-gradient(135deg,#2f2f31 0%,#3a2822 58%,#6d1f1c 100%);color:white}
+.section--bbq-home{padding:78px 0}
+.bbq-feature{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.bbq-feature__image img{width:100%;height:320px;object-fit:cover;border-radius:var(--radius);box-shadow:0 28px 70px rgba(0,0,0,.28)}
+.bbq-feature__content h2{font-family:'Libre Caslon Text',serif;font-size:clamp(2.4rem,5vw,4.6rem);line-height:1;margin:.35rem 0 1rem}
+.bbq-feature__content p{font-size:1.08rem;color:rgba(255,255,255,.86);max-width:620px}
+.bbq-tags{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 28px}
+.bbq-tags span{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:700;font-size:.86rem}
+.bbq-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.bbq-card{background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.bbq-card img{width:100%;height:170px;object-fit:cover}
+.bbq-card div{padding:20px}
+.bbq-card h3{font-family:'Libre Caslon Text',serif;margin:0 0 .45rem;font-size:1.25rem}
+.bbq-card p{margin:0;color:var(--muted);font-size:.92rem}
+.bbq-callout{margin-top:28px;background:white;border-left:4px solid var(--red);border-radius:0 12px 12px 0;padding:18px 20px;color:var(--charcoal);box-shadow:var(--shadow)}
+.bbq-callout a{color:var(--red);font-weight:700}
+@media(max-width:900px){.story-hero-grid,.story-grid,.story-grid--reverse,.cards-2,.bbq-feature{grid-template-columns:1fr}.story-hero-logo{max-width:260px}.story-image img{height:360px}.bbq-grid{grid-template-columns:1fr 1fr}.bbq-feature__image img{height:330px}}
+@media(max-width:560px){.bbq-grid{grid-template-columns:1fr}.cards-2{grid-template-columns:1fr}.story-card img{height:230px}.bbq-feature__image img{height:220px}.story-hero-logo{max-width:220px}}
+
+/* Page contact — grandes cartes boutiques */
+.contact-duo{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:0}
+.contact-card{background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.contact-card__header{background:var(--charcoal);color:white;padding:36px 38px 30px}
+.contact-card__header .eyebrow{color:rgba(255,255,255,.55);margin-bottom:.6rem}
+.contact-card__header h2{font-family:'Libre Caslon Text',serif;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;margin:0;color:white}
+.contact-card__body{padding:34px 38px 38px;display:flex;flex-direction:column;gap:20px;flex:1}
+.contact-card__phone{display:block;font-family:'Libre Caslon Text',serif;font-size:clamp(1.9rem,3vw,2.8rem);font-weight:700;color:var(--red);letter-spacing:.02em;text-decoration:none;line-height:1}
+.contact-card__phone:hover{color:var(--red-dark)}
+.contact-card__address{font-style:normal;color:var(--muted);font-size:1rem;line-height:1.6;margin:0;border-left:3px solid var(--red);padding-left:14px}
+.contact-card .opening-hours--full{background:var(--cream);border-left:3px solid var(--red);border-radius:0 10px 10px 0;padding:16px 18px;margin:0}
+.opening-hours--full h4{margin:0 0 .6rem;font-size:1rem;color:var(--charcoal)}
+.opening-hours--full dl{display:grid;gap:.3rem;margin:0}
+.opening-hours--full dl>div{display:grid;grid-template-columns:80px 1fr;gap:.5rem;align-items:start}
+.opening-hours--full dt{font-weight:700;font-size:.88rem;color:var(--charcoal)}
+.opening-hours--full dd{margin:0;font-size:.88rem;color:var(--muted)}
+.contact-card .btn{align-self:flex-start;margin-top:auto}
+@media(max-width:800px){.contact-duo{grid-template-columns:1fr}}
+@media(max-width:560px){.contact-card__header,.contact-card__body{padding:26px 24px}.contact-card__phone{font-size:1.8rem}}
