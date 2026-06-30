@@ -220,5 +220,7 @@ footer .brand img[src*="logo-officiel"]{width:300px;max-height:64px;}
 .opening-hours--full dt{font-weight:700;font-size:.88rem;color:var(--charcoal)}
 .opening-hours--full dd{margin:0;font-size:.88rem;color:var(--muted)}
 .contact-card .btn{align-self:flex-start;margin-top:auto}
+.story-card--link{display:block;text-decoration:none;color:inherit;cursor:pointer;transition:.25s}
+.story-card--link:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(34,29,25,.18)}
 @media(max-width:800px){.contact-duo{grid-template-columns:1fr}}
 @media(max-width:560px){.contact-card__header,.contact-card__body{padding:26px 24px}.contact-card__phone{font-size:1.8rem}}
