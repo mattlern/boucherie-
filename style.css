@@ -102,7 +102,7 @@ footer .brand img[src*="logo-officiel"]{width:300px;max-height:64px;}
 }
 
 .hero-logo-panel img {
-  width: clamp(340px, 42vw, 520px);
+  width: clamp(420px, 55vw, 680px);
   height: auto;
   display: block;
   filter: drop-shadow(0 28px 55px rgba(0, 0, 0, 0.45));
