@@ -28,38 +28,52 @@ document.querySelectorAll('[data-animal]').forEach(btn=>{
 /* Découpes de viande interactives */
 const CUTS = {
   boeuf: [
-    ['Collier','decoupe-boeuf-collier.png'],['Épaule','decoupe-boeuf-epaule.png'],
-    ['Côte','decoupe-boeuf-cote.png'],['Entrecôte','decoupe-boeuf-entrecote.png'],
-    ['Filet','decoupe-boeuf-filet.png'],['Rumsteck','decoupe-boeuf-rumsteck.png'],
-    ['Bavette','decoupe-boeuf-bavette.png'],['Poitrine','decoupe-boeuf-poitrine.png'],
-    ['Jarret','decoupe-boeuf-jarret.png']
+    ['Collier','decoupe-boeuf-collier.png','Morceaux à découper en cubes pour mijoter doucement et longtemps.'],
+    ['Épaule','decoupe-boeuf-epaule.png','Morceaux à braiser, cuisson longue et gélatineuse.'],
+    ['Côte','decoupe-boeuf-cote.png','Pièce d\'excellence à griller, goûteuse et tendre.'],
+    ['Entrecôte','decoupe-boeuf-entrecote.png','À griller, à poêler ou à rôtir.'],
+    ['Filet','decoupe-boeuf-filet.png','Morceau extra tendre à rôtir ou à saisir en tournedos.'],
+    ['Rumsteck','decoupe-boeuf-rumsteck.png','Excellent à rôtir ou à griller.'],
+    ['Bavette','decoupe-boeuf-bavette.png','Pièce à griller, tendre, goûteuse et légèrement filandreuse.'],
+    ['Poitrine','decoupe-boeuf-poitrine.png','Morceau pour pot-au-feu, entrelardé et filandreux.'],
+    ['Jarret','decoupe-boeuf-jarret.png','Pièce à bouillir, idéale pour le pot-au-feu.']
   ],
   veau: [
-    ['Collier','decoupe-veau-collier.png'],['Épaule','decoupe-veau-epaule.png'],
-    ['Côte','decoupe-veau-cote.png'],['Filet','decoupe-veau-filet.png'],
-    ['Noix','decoupe-veau-noix.png'],['Poitrine','decoupe-veau-poitrine.png'],
-    ['Jarret','decoupe-veau-jarret.png']
+    ['Collier','decoupe-veau-collier.png','Cuisson longue, à mijoter ou à sauter.'],
+    ['Épaule','decoupe-veau-epaule.png','Gélatineux, à mijoter doucement.'],
+    ['Côte','decoupe-veau-cote.png','Excellent à griller ou à poêler.'],
+    ['Filet','decoupe-veau-filet.png','Morceau extra tendre.'],
+    ['Noix','decoupe-veau-noix.png','Pièce noble à rôtir doucement et longtemps.'],
+    ['Poitrine','decoupe-veau-poitrine.png','Morceau entrelardé, idéal en blanquette.'],
+    ['Jarret','decoupe-veau-jarret.png','À bouillir en blanquette.']
   ],
   porc: [
-    ['Palette','decoupe-porc-palette.png'],['Échine','decoupe-porc-echine.png'],
-    ['Côtes','decoupe-porc-cotes.png'],['Filet','decoupe-porc-filet.png'],
-    ['Poitrine','decoupe-porc-poitrine.png'],['Jambon','decoupe-porc-jambon.png'],
-    ['Gorge','decoupe-porc-gorge.png'],['Jarret','decoupe-porc-jarret.png']
+    ['Palette','decoupe-porc-palette.png','À bouillir pour la potée.'],
+    ['Échine','decoupe-porc-echine.png','À mijoter longtemps ou à griller en tranches.'],
+    ['Côtes','decoupe-porc-cotes.png','À griller ou à poêler.'],
+    ['Filet','decoupe-porc-filet.png','Pièce noble à rôtir.'],
+    ['Poitrine','decoupe-porc-poitrine.png','Aussi appelée lard, accompagne de nombreux plats.'],
+    ['Jambon','decoupe-porc-jambon.png','Cuit ou cru, parfait en entrée.'],
+    ['Gorge','decoupe-porc-gorge.png','Morceau pour la conception de terrines.'],
+    ['Jarret','decoupe-porc-jarret.png','À bouillir deux heures avec des légumes.']
   ],
   agneau: [
-    ['Collier','decoupe-agneau-collier.png'],['Épaule','decoupe-agneau-epaule.png'],
-    ['Carré','decoupe-agneau-carre.png'],['Selle','decoupe-agneau-selle.png'],
-    ['Gigot','decoupe-agneau-gigot.png'],['Poitrine','decoupe-agneau-poitrine.png'],
-    ['Souris','decoupe-agneau-souris.png']
+    ['Collier','decoupe-agneau-collier.png','À mijoter doucement.'],
+    ['Épaule','decoupe-agneau-epaule.png','Pièce généreuse à rôtir ou à braiser.'],
+    ['Carré','decoupe-agneau-carre.png','À griller ou à poêler.'],
+    ['Selle','decoupe-agneau-selle.png','Morceau à rôtir.'],
+    ['Gigot','decoupe-agneau-gigot.png','Pièce noble à rôtir.'],
+    ['Poitrine','decoupe-agneau-poitrine.png','Morceaux pour le navarin.'],
+    ['Souris','decoupe-agneau-souris.png','Pièce noble à braiser.']
   ],
   volaille: [
-    ['Blanc','decoupe-volaille-blanc.png'],['Ailes','decoupe-volaille-ailes.png'],
-    ['Hauts de cuisse','decoupe-volaille-hauts-de-cuisse.png'],
-    ['Cuisses','decoupe-volaille-cuisses.png'],['Pilons','decoupe-volaille-pilons.png']
+    ['Blanc','decoupe-volaille-blanc.png','À poêler en cubes ou en émincé.'],
+    ['Ailes','decoupe-volaille-ailes.png','À mijoter.'],
+    ['Hauts de cuisse','decoupe-volaille-hauts-de-cuisse.png','À rôtir.'],
+    ['Cuisses','decoupe-volaille-cuisses.png','À rôtir.'],
+    ['Pilons','decoupe-volaille-pilons.png','À mijoter.']
   ]
 };
-
-const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cette pièce se prête à différentes cuissons et préparations. Nos conseils et recettes seront ajoutés prochainement.';
 
 function loadImage(src){
   return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=reject;img.src=src;});
@@ -75,7 +89,7 @@ async function initCutViewer(panel){
   const text=info.querySelector('.cut-info-text');
   const buttons=info.querySelector('.cut-buttons');
   const base=await loadImage(viewer.dataset.base);
-  const pieces=await Promise.all(CUTS[animal].map(async([name,file])=>({name,file,img:await loadImage(`assets/images/cuts/${file}`)})));
+  const pieces=await Promise.all(CUTS[animal].map(async([name,file,desc])=>({name,file,desc,img:await loadImage(`assets/images/cuts/${file}`)})));
   const masks=pieces.map(piece=>{
     const c=document.createElement('canvas');c.width=canvas.width;c.height=canvas.height;
     const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(piece.img,0,0,c.width,c.height);
@@ -96,8 +110,8 @@ async function initCutViewer(panel){
     selected=index;locked=lock;
     draw(index);
     buttons.querySelectorAll('button').forEach((b,i)=>b.classList.toggle('active',i===index));
-    if(index>=0){title.textContent=pieces[index].name;text.textContent=lorem;info.classList.add('is-selected');}
-    else{title.textContent='Découvrez les morceaux';text.textContent='Survolez une pièce de l’animal pour afficher son nom et découvrir bientôt nos conseils de cuisson et recettes.';info.classList.remove('is-selected');}
+    if(index>=0){title.textContent=pieces[index].name;text.textContent=pieces[index].desc;info.classList.add(‘is-selected’);}
+    else{title.textContent=’Découvrez les morceaux’;text.textContent=’Survolez une pièce de l\’animal pour afficher son nom et le conseil de notre boucher.’;info.classList.remove(‘is-selected’);}
   }
   function pieceAt(clientX,clientY){
     const r=canvas.getBoundingClientRect();
