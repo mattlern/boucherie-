@@ -110,8 +110,8 @@ async function initCutViewer(panel){
     selected=index;locked=lock;
     draw(index);
     buttons.querySelectorAll('button').forEach((b,i)=>b.classList.toggle('active',i===index));
-    if(index>=0){title.textContent=pieces[index].name;text.textContent=pieces[index].desc;info.classList.add(‘is-selected’);}
-    else{title.textContent=’Découvrez les morceaux’;text.textContent=’Survolez une pièce de l\’animal pour afficher son nom et le conseil de notre boucher.’;info.classList.remove(‘is-selected’);}
+    if(index>=0){title.textContent=pieces[index].name;text.textContent=pieces[index].desc;info.classList.add('is-selected');}
+    else{title.textContent='Découvrez les morceaux';text.textContent='Survolez une pièce de l\'animal pour afficher son nom et le conseil de notre boucher.';info.classList.remove('is-selected');}
   }
   function pieceAt(clientX,clientY){
     const r=canvas.getBoundingClientRect();
